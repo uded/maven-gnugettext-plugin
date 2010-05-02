@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.radical.gnu.gettext</groupId>
 	<artifactId>gettext</artifactId>
@@ -18,33 +19,12 @@
 		<name>Radical Creations</name>
 	</organization>
 
-    <!-- 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>antlr-maven-plugin</artifactId>
-				<version>2.0</version>
-				<dependencies>
-					<dependency>
-						<groupId>antlr</groupId>
-						<artifactId>antlr</artifactId>
-						<version>2.7.6</version>
-					</dependency>
-				</dependencies>
-				<configuration>
-					<grammars>catalog.g</grammars>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+	<!--
+		<build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>antlr-maven-plugin</artifactId>
+		<version>2.0</version> <dependencies> <dependency> <groupId>antlr</groupId> <artifactId>antlr</artifactId>
+		<version>2.7.6</version> </dependency> </dependencies> <configuration> <grammars>catalog.g</grammars> </configuration>
+		<executions> <execution> <goals> <goal>generate</goal> </goals> </execution> </executions> </plugin> </plugins>
+		</build>
 	-->
 
 	<repositories>
@@ -52,8 +32,12 @@
 			<id>radical-3rdparty</id>
 			<url>http://maven.radical.com.pl/thirdparty/</url>
 		</repository>
+		<repository>
+			<id>gettext-commons-site</id>
+			<url>http://gettext-commons.googlecode.com/svn/maven-repository/</url>
+		</repository>
 	</repositories>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -62,17 +46,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.antlr</groupId>
-			<artifactId>antlr</artifactId>
-			<version>3.1.3</version>
-		</dependency>
 
-		<dependency>
-			<groupId>args4j</groupId>
-			<artifactId>args4j</artifactId>
-			<version>RELEASE</version>
-		</dependency>
 		<dependency>
 			<groupId>org.xnap.commons</groupId>
 			<artifactId>gettext-commons</artifactId>
