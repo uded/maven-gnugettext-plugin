@@ -8,15 +8,8 @@ import java.util.Map.Entry;
 import org.junit.Assert;
 import org.junit.Test;
 
-import pl.radical.gnu.gettext.msgfmt.MsgFormat;
-
 public class MsgFormatTest {
 	public static final String NL = System.getProperty("line.separator");
-
-	// @Test
-	// public void testReadFile() {
-	// Assert.fail("Not yet implemented");
-	// }
 
 	@Test
 	public void testReadMessagess() {
