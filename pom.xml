@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pl.radical.gnu.gettext</groupId>
+	<artifactId>gettext</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1</version>
+	<name>GNU gettext port for java</name>
+	<description>An attempt to port a gettext tools to Java</description>
+	<developers>
+		<developer>
+			<id>uded</id>
+			<name>Łukasz Rżanek</name>
+			<email>lukasz@radical.com.pl</email>
+			<organization>Radical Creations</organization>
+		</developer>
+	</developers>
+	<organization>
+		<name>Radical Creations</name>
+	</organization>
+
+    <!-- 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>antlr-maven-plugin</artifactId>
+				<version>2.0</version>
+				<dependencies>
+					<dependency>
+						<groupId>antlr</groupId>
+						<artifactId>antlr</artifactId>
+						<version>2.7.6</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<grammars>catalog.g</grammars>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	-->
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.6</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>3.1.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>args4j</groupId>
+			<artifactId>args4j</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.xnap.commons</groupId>
+			<artifactId>gettext-commons</artifactId>
+			<version>0.9.6</version>
+		</dependency>
+	</dependencies>
+</project>
