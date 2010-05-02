@@ -47,6 +47,13 @@
 	</build>
 	-->
 
+	<repositories>
+		<repository>
+			<id>radical-3rdparty</id>
+			<url>http://maven.radical.com.pl/thirdparty/</url>
+		</repository>
+	</repositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -70,6 +77,11 @@
 			<groupId>org.xnap.commons</groupId>
 			<artifactId>gettext-commons</artifactId>
 			<version>0.9.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.parboiled</groupId>
+			<artifactId>parboiled</artifactId>
+			<version>0.9.7.0</version>
 		</dependency>
 	</dependencies>
 </project>
